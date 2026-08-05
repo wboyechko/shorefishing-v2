@@ -1,0 +1,176 @@
+/* ==========================================
+   Hero Section
+   ========================================== */
+
+.hero {
+
+    position: relative;
+
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    color: #fff;
+
+}
+
+.hero-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image: url("../images/hero/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center center;
+
+    transform: scale(1.03);
+
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        rgba(5,25,40,.35),
+        rgba(5,25,40,.60)
+    );
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+
+    padding: 40px;
+
+}
+
+.hero-content h2 {
+
+    font-size: clamp(2.5rem,6vw,4.8rem);
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:1.3rem;
+
+    line-height:1.7;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+    display:inline-block;
+
+    padding:16px 34px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.25s;
+
+}
+
+.hero-btn-primary{
+
+    background:#0d5c8f;
+
+    color:white;
+
+}
+
+.hero-btn-primary:hover{
+
+    background:#1174b5;
+
+}
+
+.hero-btn-secondary{
+
+    border:2px solid white;
+
+    color:white;
+
+}
+
+.hero-btn-secondary:hover{
+
+    background:white;
+
+    color:#0b2436;
+
+}
+
+.scroll-indicator{
+
+    position:absolute;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:2rem;
+
+    animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translate(-50%,0);
+
+}
+
+50%{
+
+transform:translate(-50%,10px);
+
+}
+
+}
