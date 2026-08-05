@@ -1,0 +1,119 @@
+/* ==========================================
+   ShoreFishing.net Navigation
+   ========================================== */
+
+:root {
+    --header-height: 80px;
+    --brand-blue: #0d5c8f;
+    --brand-dark: #0b2436;
+    --brand-light: #ffffff;
+    --accent: #f0b429;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(11,36,54,.95);
+    backdrop-filter: blur(8px);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+    height: var(--header-height);
+}
+
+.site-header .container{
+    max-width:1200px;
+    margin:auto;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 20px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+}
+
+.brand img{
+    height:56px;
+}
+
+.brand-text h1{
+    color:white;
+    font-size:1.4rem;
+    margin:0;
+}
+
+.brand-text span{
+    color:#b6d7ea;
+    font-size:.8rem;
+}
+
+.nav-menu{
+    display:flex;
+    gap:30px;
+}
+
+.nav-menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.25s;
+}
+
+.nav-menu a:hover{
+    color:var(--accent);
+}
+
+.nav-menu a.active{
+    color:var(--accent);
+}
+
+.mobile-toggle{
+    display:none;
+    cursor:pointer;
+}
+
+.mobile-toggle span{
+    display:block;
+    width:28px;
+    height:3px;
+    margin:5px 0;
+    background:white;
+}
+
+@media(max-width:900px){
+
+.nav-menu{
+
+display:none;
+
+position:absolute;
+top:80px;
+left:0;
+right:0;
+
+background:var(--brand-dark);
+
+flex-direction:column;
+
+padding:25px;
+}
+
+.nav-menu.show{
+display:flex;
+}
+
+.mobile-toggle{
+display:block;
+}
+
+}
