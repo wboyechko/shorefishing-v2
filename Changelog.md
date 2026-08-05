@@ -14,3 +14,9 @@
 - Responsive homepage
 - Gallery
 - JSON architecture
+
+## v2.0.0-alpha.2
+
+### Added
+
+- Featured Destination homepage section
