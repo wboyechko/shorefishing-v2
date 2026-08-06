@@ -20,3 +20,12 @@
 ### Added
 
 - Featured Destination homepage section
+
+feat(gallery): create gallery page foundation
+
+## Added
+
+- New Gallery page
+- Responsive gallery layout
+- Gallery stylesheet
+- Gallery JavaScript foundation
