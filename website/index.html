@@ -19,6 +19,9 @@
 <link rel="stylesheet" href="assets/css/variables.css">
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/navigation.css">
+<link rel="stylesheet" href="assets/css/hero.css">
+<link rel="stylesheet" href="assets/css/cards.css">
 
 </head>
 
@@ -26,50 +29,92 @@
 
 <header class="site-header">
 
-    <div class="container">
+<div class="container">
 
-        <div class="logo">
+<a class="brand" href="index.html">
 
-            <img src="assets/images/logo/logo.png"
-                 alt="ShoreFishing.net Logo">
+<img src="assets/images/logo/logo.png"
+     alt="ShoreFishing.net">
 
-            <div>
+<div class="brand-text">
 
-                <h1>ShoreFishing.net</h1>
+<h1>ShoreFishing.net</h1>
 
-                <p class="tagline">
-                    Established 2004
-                </p>
+<span>Established 2004</span>
 
-            </div>
+</div>
 
-        </div>
+</a>
 
-        <nav>
+<nav class="nav-menu">
 
-            <ul>
+<a class="active" href="index.html">Home</a>
+<a href="#">Locations</a>
+<a href="#">Species</a>
+<a href="#">Gallery</a>
+<a href="#">Stories</a>
+<a href="#">Community</a>
+<a href="#">About</a>
 
-                <li><a href="#">Home</a></li>
+</nav>
 
-                <li><a href="#">Locations</a></li>
+<div class="mobile-toggle" aria-label="Open navigation" role="button" tabindex="0">
 
-                <li><a href="#">Species</a></li>
+<span></span>
+<span></span>
+<span></span>
 
-                <li><a href="#">Gallery</a></li>
+</div>
 
-                <li><a href="#">Stories</a></li>
-
-                <li><a href="#">Community</a></li>
-
-                <li><a href="#">About</a></li>
-
-            </ul>
-
-        </nav>
-
-    </div>
+</div>
 
 </header>
+
+<section class="hero">
+
+<div class="hero-image"></div>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h2>Your Guide To Fishing The Shore</h2>
+
+<p>
+
+Discover great shore fishing locations, learn about fish species,
+explore stunning photography, and become part of a community that
+respects nature and shares a passion for fishing.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#featured"
+class="hero-btn hero-btn-primary">
+
+Explore Locations
+
+</a>
+
+<a href="gallery.html"
+class="hero-btn hero-btn-secondary">
+
+View Gallery
+
+</a>
+
+</div>
+
+</div>
+
+<div class="scroll-indicator">
+
+↓
+
+</div>
+
+</section>
 
 <section class="hero">
 
@@ -105,95 +150,132 @@
 
 </section>
 
-<section class="features">
+<section id="featured" class="featured">
 
-    <div class="container">
+<div class="container">
 
-        <article class="card">
+<div class="section-title">
 
-            <h3>📍 Explore Locations</h3>
+<h2>Explore ShoreFishing.net</h2>
 
-            <p>
+<p>
 
-                Search shore fishing destinations around the world.
+Everything you need to discover great shore fishing opportunities,
+learn new techniques, and connect with fellow anglers.
 
-            </p>
+</p>
 
-        </article>
+</div>
 
-        <article class="card">
+<div class="card-grid">
 
-            <h3>🐟 Fish Species</h3>
+<article class="feature-card">
 
-            <p>
+<img src="assets/images/cards/locations.jpg"
+     alt="Fishing Locations">
 
-                Learn about species commonly caught from shore.
+<div class="feature-card-content">
 
-            </p>
+<h3>📍 Fishing Locations</h3>
 
-        </article>
+<p>
 
-        <article class="card">
+Browse shore fishing locations complete with maps,
+photographs and local information.
 
-            <h3>📸 Photo Gallery</h3>
+</p>
 
-            <p>
+<a href="locations.html">
 
-                Beautiful photography submitted by anglers.
+Explore Locations →
 
-            </p>
+</a>
 
-        </article>
+</div>
 
-        <article class="card">
+</article>
 
-            <h3>📝 Stories</h3>
+<article class="feature-card">
 
-            <p>
+<img src="assets/images/cards/species.jpg"
+     alt="Fish Species">
 
-                Experiences, tips and memorable fishing adventures.
+<div class="feature-card-content">
 
-            </p>
+<h3>🐟 Fish Species</h3>
 
-        </article>
+<p>
 
-    </div>
+Learn about the fish you can catch,
+including identification and seasonal information.
 
-</section>
+</p>
 
-<section class="featured">
+<a href="species.html">
 
-    <div class="container">
+View Species →
 
-        <h2>Featured Destination</h2>
+</a>
 
-        <p>
+</div>
 
-            Every shoreline has a story.
+</article>
 
-            Soon this section will showcase one outstanding destination
-            complete with photography, maps, species and local information.
+<article class="feature-card">
 
-        </p>
+<img src="assets/images/cards/gallery.jpg"
+     alt="Gallery">
 
-    </div>
+<div class="feature-card-content">
 
-</section>
+<h3>📸 Photo Gallery</h3>
 
-<section class="community">
+<p>
 
-    <div class="container">
+Explore beautiful fishing photographs
+with captions and stories from the shoreline.
 
-        <h2>Join the Community</h2>
+</p>
 
-        <p>
+<a href="gallery.html">
 
-            Share your fishing stories, photographs,
-            and help anglers discover amazing places.
+Open Gallery →
 
-        </p>
+</a>
 
-    </div>
+</div>
+
+</article>
+
+<article class="feature-card">
+
+<img src="assets/images/cards/community.jpg"
+     alt="Community">
+
+<div class="feature-card-content">
+
+<h3>🤝 Community</h3>
+
+<p>
+
+Read fishing stories and eventually submit
+your own adventures and photographs.
+
+</p>
+
+<a href="community.html">
+
+Join the Community →
+
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
 
 </section>
 
@@ -240,6 +322,8 @@
 </footer>
 
 <script src="assets/js/app.js"></script>
+<script src="assets/js/navigation.js"></script>
+<script src="assets/js/hero.js"></script>
 
 </body>
 </html>
