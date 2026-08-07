@@ -29,3 +29,12 @@ feat(gallery): create gallery page foundation
 - Responsive gallery layout
 - Gallery stylesheet
 - Gallery JavaScript foundation
+
+feat(gallery): add fullscreen and slideshow controls
+
+### Added
+
+- Gallery fullscreen viewing
+- Gallery slideshow mode
+- Slideshow pause control
+- Fullscreen accessibility labels
