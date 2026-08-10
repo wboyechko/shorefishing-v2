@@ -13,6 +13,9 @@ const title = document.getElementById("gallery-title");
 const description =
     document.getElementById("gallery-description");
 
+const details =
+    document.getElementById("gallery-details");
+	
 const thumbnailContainer =
     document.getElementById("thumbnail-container");
 
@@ -110,13 +113,17 @@ function loadImage(index) {
 
         img.src = photo.image;
 
-        img.alt = photo.title || "ShoreFishing.net photograph";
+        img.alt =
+            photo.title ||
+            "ShoreFishing.net photograph";
 
         title.textContent =
             photo.title || "";
 
         description.textContent =
             photo.description || "";
+
+        updatePhotoDetails(photo);
 
         updateThumbnails();
 
@@ -126,6 +133,96 @@ function loadImage(index) {
 
 }
 
+function updatePhotoDetails(photo) {
+
+    details.innerHTML = "";
+
+    const fields = [
+
+        {
+            icon: "📍",
+            label: "Location",
+            value: photo.location
+        },
+
+        {
+            icon: "🎣",
+            label: "Species",
+            value: photo.species
+        },
+
+        {
+            icon: "📅",
+            label: "Date",
+            value: formatPhotoDate(photo.date)
+        },
+
+        {
+            icon: "📷",
+            label: "Photographer",
+            value: photo.photographer
+        }
+
+    ];
+
+    fields.forEach(field => {
+
+        if (!field.value) {
+            return;
+        }
+
+        const item =
+            document.createElement("span");
+
+        item.className =
+            "gallery-detail";
+
+        item.innerHTML = `
+            <span aria-hidden="true">${field.icon}</span>
+            <strong>${field.label}:</strong>
+            <span>${escapeHTML(field.value)}</span>
+        `;
+
+        details.appendChild(item);
+
+    });
+
+}
+
+function formatPhotoDate(date) {
+
+    if (!date) {
+        return "";
+    }
+
+    const parsedDate =
+        new Date(`${date}T00:00:00`);
+
+    if (Number.isNaN(parsedDate.getTime())) {
+        return date;
+    }
+
+    return parsedDate.toLocaleDateString(
+        undefined,
+        {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        }
+    );
+
+}
+
+function escapeHTML(value) {
+
+    const element =
+        document.createElement("div");
+
+    element.textContent = value;
+
+    return element.innerHTML;
+
+}
 
 /* ==========================================
    Create Thumbnails
