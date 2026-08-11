@@ -47,3 +47,12 @@ feat(archive): add historical photo archive structure
 - Year-based historical image folders
 - Unsorted historical image folder
 - Historical gallery data file
+
+- feat(archive): add historical archive index
+
+- ### Added
+
+- Historical archive index
+- Archive beginning year set to 2004
+- Year-based archive metadata
+- Placeholder entries for future historical photographs
