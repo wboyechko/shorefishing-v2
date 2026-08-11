@@ -38,3 +38,12 @@ feat(gallery): add fullscreen and slideshow controls
 - Gallery slideshow mode
 - Slideshow pause control
 - Fullscreen accessibility labels
+
+feat(archive): add historical photo archive structure
+
+### Added
+
+- Historical photo archive structure
+- Year-based historical image folders
+- Unsorted historical image folder
+- Historical gallery data file
