@@ -1,0 +1,32 @@
+{
+    "id": "example-location",
+    "name": "Example Shoreline",
+    "region": "",
+    "country": "",
+    "waterbody": "",
+    "description": "",
+    "access": "",
+    "species": [],
+    "photos": [],
+    "notes": ""
+}
+
+<!--- Example ---|
+
+{
+    "id": "example-location",
+    "name": "Example Shoreline",
+    "region": "Example Region",
+    "country": "Example Country",
+    "waterbody": "Example Lake",
+    "description": "Information about this fishing location.",
+    "access": "Public shoreline access.",
+    "species": [
+        "Walleye",
+        "Northern Pike"
+    ],
+    "photos": [
+        "assets/images/locations/example-location-01.jpg"
+    ],
+    "notes": "Additional information for anglers."
+}

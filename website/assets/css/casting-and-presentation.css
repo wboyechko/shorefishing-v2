@@ -1,0 +1,304 @@
+.casting-content {
+    padding: 65px 0 80px;
+}
+
+.casting-content .container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.casting-intro,
+.casting-practice,
+.casting-presentation,
+.casting-summary {
+    max-width: 800px;
+    margin: 0 auto 65px;
+}
+
+.casting-intro p,
+.casting-practice p,
+.casting-presentation p,
+.casting-summary p {
+    line-height: 1.8;
+}
+
+.casting-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.casting-feature.reverse .casting-feature-text {
+    order: 2;
+}
+
+.casting-feature.reverse .casting-visual {
+    order: 1;
+}
+
+.casting-feature-text h2 {
+    margin-bottom: 18px;
+}
+
+.casting-feature-text > p {
+    line-height: 1.8;
+}
+
+.casting-steps {
+    padding-left: 25px;
+    margin-top: 25px;
+}
+
+.casting-steps li {
+    margin-bottom: 12px;
+    line-height: 1.65;
+}
+
+.casting-visual {
+    min-height: 320px;
+}
+
+.clock-cast {
+    min-height: 320px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.clock-face {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    margin: 0 auto 20px;
+    border: 2px solid #888;
+    border-radius: 50%;
+}
+
+.clock-face span {
+    position: absolute;
+    font-weight: 700;
+}
+
+.clock-12 {
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clock-3 {
+    right: 10px;
+    top: 50%;
+}
+
+.clock-6 {
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clock-9 {
+    left: 10px;
+    top: 50%;
+}
+
+.clock-2 {
+    right: 35px;
+    top: 35px;
+}
+
+.clock-11 {
+    left: 35px;
+    top: 35px;
+}
+
+.clock-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+
+.release-diagram {
+    position: relative;
+    min-height: 320px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+.release-rod {
+    position: absolute;
+    width: 75%;
+    height: 8px;
+    left: 12%;
+    top: 50%;
+    transform: rotate(-20deg);
+    background: #777;
+}
+
+.release-line {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 10%;
+    top: 35%;
+    border-right: 2px dashed #777;
+    border-bottom: 2px dashed #777;
+    border-radius: 0 0 80px 0;
+}
+
+.release-point {
+    position: absolute;
+    right: 22%;
+    top: 25%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: white;
+    font-weight: 700;
+}
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.practice-grid > div {
+    padding: 28px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: #f7f7f7;
+}
+
+.practice-grid span {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.practice-grid h3 {
+    margin-bottom: 10px;
+}
+
+.practice-grid p {
+    line-height: 1.7;
+}
+
+.casting-distance {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.casting-distance-text p {
+    line-height: 1.8;
+}
+
+.casting-distance-visual {
+    min-height: 300px;
+}
+
+.strike-zone-diagram {
+    position: relative;
+    min-height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+.shore {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    padding: 25px;
+    font-weight: 700;
+}
+
+.near-zone {
+    position: absolute;
+    left: 25%;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    padding: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.far-zone {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 45%;
+    padding: 25px;
+    text-align: center;
+}
+
+.diagonal-cast {
+    position: absolute;
+    left: 35%;
+    top: 45%;
+    font-size: 2.5rem;
+}
+
+.casting-presentation {
+    text-align: center;
+}
+
+.casting-presentation .guide-note {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.casting-summary {
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f7f7f7;
+}
+
+@media (max-width: 800px) {
+
+    .casting-feature,
+    .casting-distance {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .casting-feature.reverse .casting-feature-text,
+    .casting-feature.reverse .casting-visual {
+        order: initial;
+    }
+
+    .practice-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .casting-content {
+        padding: 45px 0 60px;
+    }
+
+    .clock-face {
+        width: 200px;
+        height: 200px;
+    }
+
+}
