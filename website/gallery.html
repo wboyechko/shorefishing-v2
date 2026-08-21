@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Photo Gallery | ShoreFishing.net</title>
+
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/navigation.css">
+<link rel="stylesheet" href="assets/css/gallery.css">
+<link rel="stylesheet" href="assets/css/ads.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container">
+
+        <a class="brand" href="index.html">
+            <img
+                src="assets/images/logo/logo.png"
+                alt="ShoreFishing.net">
+
+            <div class="brand-text">
+                <h1>ShoreFishing.net</h1>
+                <span>Established 2004</span>
+            </div>
+        </a>
+
+        <nav class="nav-menu">
+
+			<a href="index.html">Home</a>
+
+			<a href="locations.html">Locations</a>
+
+			<a href="how-to-fish.html">
+				Learn How To Fish
+			</a>
+
+			<a href="gallery.html">Gallery</a>
+
+			<a href="historical.html">
+				Historical Archive
+			</a>
+
+		</nav>
+
+
+			<div
+				class="mobile-toggle"
+				aria-label="Open navigation"
+				role="button"
+				tabindex="0">
+
+				<span></span>
+				<span></span>
+				<span></span>
+
+			</div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="gallery-hero">
+
+<h1>Photo Gallery</h1>
+
+<p>
+Original photography from shore anglers.
+Every picture tells a story.
+</p>
+
+</section>
+
+<section class="gallery">
+
+<div class="gallery-viewer">
+
+<button class="gallery-arrow prev"
+        aria-label="Previous image">
+❮
+</button>
+
+<div class="gallery-controls">
+
+<button
+    id="slideshow-toggle"
+    type="button"
+    aria-pressed="false">
+    ▶ Start Slideshow
+</button>
+
+</div>
+
+<img
+id="gallery-image"
+src="assets/images/gallery/sample01.jpg"
+alt="Morning Walleye">
+
+<button class="gallery-arrow next"
+        aria-label="Next image">
+❯
+</button>
+
+<button
+    class="gallery-fullscreen"
+    type="button"
+    aria-label="Enter fullscreen"
+    title="Fullscreen">
+    ⛶
+</button>
+
+</div>
+
+<div class="gallery-caption">
+
+<h2 id="gallery-title"></h2>
+
+<div
+    id="gallery-details"
+    class="gallery-details"
+    aria-label="Photo details">
+</div>
+
+<p id="gallery-description"></p>
+
+</div>
+
+<div
+class="thumbnail-container"
+id="thumbnail-container">
+<!-- populated by JavaScript -->
+</div>
+
+</section>
+<section class="site-ad" aria-label="Advertisement">
+
+    <div class="site-ad-label">
+        Advertisement
+    </div>
+
+    <div class="site-ad-slot">
+
+        <!-- Google AdSense code goes here -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9441055607573627"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-9441055607573627"
+     data-ad-slot="2281451208"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+
+</section>
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<p>
+    © 2004–2026 Wade Boyechko | ShoreFishing.net
+</p>
+
+<p>
+    Your Guide To Fishing The Shore
+</p>
+
+</div>
+
+</footer>
+
+
+<script src="assets/js/navigation.js"></script>
+<script src="assets/js/gallery.js"></script>
+
+</body>
+</html>

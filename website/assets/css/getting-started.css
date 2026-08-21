@@ -1,0 +1,320 @@
+/* ====================================
+   Getting Started Guide
+==================================== */
+
+.guide-hero {
+
+    padding: 55px 0;
+
+    background: var(--background);
+
+}
+
+.guide-hero .container {
+
+    max-width: 850px;
+
+}
+
+.back-link {
+
+    display: inline-block;
+
+    margin-bottom: 35px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+.guide-hero h1 {
+
+    margin-bottom: 18px;
+
+    font-size:
+        clamp(2.2rem, 5vw, 3.5rem);
+
+}
+
+.guide-hero p:last-child {
+
+    font-size: 1.1rem;
+
+    line-height: 1.7;
+
+}
+
+
+.guide-content {
+
+    padding: 65px 0 80px;
+
+}
+
+.guide-article {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+}
+
+.guide-introduction {
+
+    margin-bottom: 55px;
+
+}
+
+.guide-introduction h2 {
+
+    margin-bottom: 18px;
+
+}
+
+.guide-introduction p {
+
+    font-size: 1.08rem;
+
+    line-height: 1.8;
+
+}
+
+
+.guide-topic {
+
+    margin-bottom: 45px;
+
+}
+
+.guide-topic h2 {
+
+    margin-bottom: 18px;
+
+    font-size: 1.6rem;
+
+}
+
+
+.content-placeholder {
+
+    padding: 25px;
+
+    background: #f7f7f7;
+
+    border-left: 4px solid currentColor;
+
+    border-radius: 4px;
+
+}
+
+.content-placeholder p {
+
+    margin: 0;
+
+    line-height: 1.7;
+
+}
+
+
+.guide-next {
+
+    padding: 60px 0;
+
+    text-align: center;
+
+    background: var(--background);
+
+}
+
+.guide-next .container {
+
+    max-width: 700px;
+
+}
+
+.guide-next h2 {
+
+    margin-bottom: 15px;
+
+}
+
+.guide-next p {
+
+    margin-bottom: 25px;
+
+    line-height: 1.7;
+
+}
+
+.guide-button {
+
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .guide-hero {
+
+        padding: 40px 0;
+
+    }
+
+    .guide-content {
+
+        padding: 45px 0 60px;
+
+    }
+
+    .guide-topic {
+
+        margin-bottom: 35px;
+
+    }
+
+}
+
+.guide-topic h3 {
+
+    margin-top: 30px;
+
+    margin-bottom: 12px;
+
+    font-size: 1.25rem;
+
+}
+
+.guide-topic p {
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+}
+
+.guide-note {
+
+    margin: 25px 0;
+
+    padding: 20px 24px;
+
+    background: #f7f7f7;
+
+    border-left: 4px solid currentColor;
+
+    border-radius: 4px;
+
+}
+
+.guide-note strong {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+}
+
+.guide-note p {
+
+    margin-bottom: 0;
+
+}
+
+.related-guides {
+
+    padding: 65px 0;
+
+    background: #f7f7f7;
+
+}
+
+.related-guides .container {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+}
+
+.related-guides-intro {
+
+    max-width: 700px;
+
+    margin-bottom: 30px;
+
+    line-height: 1.7;
+
+}
+
+.related-guides-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(260px, 1fr)
+        );
+
+    gap: 20px;
+
+}
+
+.related-guide-card {
+
+    display: block;
+
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+.related-guide-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+}
+
+.related-guide-card h3 {
+
+    margin-bottom: 10px;
+
+}
+
+.related-guide-card p {
+
+    margin-bottom: 18px;
+
+    line-height: 1.6;
+
+}
+
+.related-guide-card span {
+
+    font-weight: 700;
+
+}

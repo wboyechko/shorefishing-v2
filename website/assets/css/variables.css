@@ -1,0 +1,52 @@
+/* ===================================================
+   ShoreFishing.net Design System
+   Version: 2.0.0-alpha
+   =================================================== */
+
+:root {
+
+    /* Brand Colors */
+
+    --primary: #0B4F6C;
+    --primary-dark: #083B52;
+    --secondary: #2E8B57;
+    --accent: #F4A261;
+
+    --background: #F8FAFC;
+    --surface: #FFFFFF;
+
+    --text: #1E293B;
+    --text-light: #64748B;
+
+    --border: #E2E8F0;
+
+    /* Typography */
+
+    --font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    --font-size-base: 16px;
+
+    --line-height: 1.6;
+
+    /* Layout */
+
+    --max-width: 1200px;
+
+    --header-height: 90px;
+
+    --radius: 12px;
+
+    --shadow:
+
+        0 10px 25px rgba(0,0,0,.08);
+
+    --transition:
+
+        .3s ease;
+
+}
